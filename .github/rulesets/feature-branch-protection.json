@@ -13,7 +13,6 @@
   },
   "rules": [
     {
-      "id": "require-pull-request-feature",
       "type": "pull_request",
       "parameters": {
         "required_approving_review_count": 1,
@@ -21,7 +20,6 @@
       }
     },
     {
-      "id": "require-status-checks-feature",
       "type": "status_check",
       "parameters": {
         "required_status_checks": [
@@ -33,7 +31,6 @@
       }
     },
     {
-      "id": "restrict-sensitive-files-feature",
       "type": "file_pattern",
       "parameters": {
         "restricted_paths": [

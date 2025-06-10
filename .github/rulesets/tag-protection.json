@@ -13,19 +13,16 @@
   },
   "rules": [
     {
-      "id": "restrict-tag-pushes",
       "type": "push",
       "parameters": {
         "bypass_mode": "off"
       }
     },
     {
-      "id": "require-tag-signatures",
       "type": "commit_signature",
       "parameters": {}
     },
     {
-      "id": "restrict-tag-creation",
       "type": "tag",
       "parameters": {
         "allow_force_pushes": false,
