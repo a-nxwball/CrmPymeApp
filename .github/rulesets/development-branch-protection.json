@@ -8,10 +8,7 @@
       "include": [
         "develop",
         "development",
-        "dev",
-        "feature/*",
-        "bugfix/*",
-        "hotfix/*"
+        "dev"
       ]
     }
   },
@@ -19,9 +16,7 @@
     {
       "type": "pull_request",
       "parameters": {
-        "required_approving_review_count": 1,
-        "dismiss_stale_reviews_on_push": true,
-        "require_last_push_approval": true
+        "required_approving_review_count": 1
       }
     },
     {
@@ -31,39 +26,8 @@
           {
             "context": "dotnet-build"
           }
-        ],
-        "strict_required_status_checks_policy": true,
-        "require_branches_to_be_up_to_date": true
-      }
-    },
-    {
-      "type": "file_pattern",
-      "parameters": {
-        "restricted_paths": [
-          "appsettings.Production.json",
-          "*.key",
-          "secrets/",
-          "*.pem"
         ]
       }
-    },
-    {
-      "type": "file_pattern",
-      "parameters": {
-        "max_file_size": 104857600,
-        "restricted_paths": [
-          "*.zip",
-          "*.rar",
-          "*.7z"
-        ]
-      }
-    }
-  ],
-  "bypass_actors": [
-    {
-      "actor_id": "a-nxwball",
-      "actor_type": "User",
-      "bypass_mode": "always"
     }
   ]
 } 
