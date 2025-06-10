@@ -109,6 +109,11 @@
       "name": "performance",
       "color": "ff9500",
       "description": "Optimizaciones de rendimiento"
+    },
+    {
+      "name": "sponsorship",
+      "color": "ff69b4",
+      "description": "Consultas y propuestas relacionadas con patrocinio"
     }
   ]
 } 

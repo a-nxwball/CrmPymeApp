@@ -82,6 +82,29 @@ Especialmente agradezco sugerencias sobre:
 
 **🎯 ¿No sabes por dónde empezar?** ¡Visita mis [Discusiones](https://github.com/a-nxwball/CrmPymeApp/discussions) y únete a la conversación! Es el lugar perfecto para compartir ideas, hacer preguntas y conocer a otros desarrolladores interesados en CRMs.
 
+## 🎯 Sponsorship
+
+¿Te gusta este proyecto? ¡Considera apoyarlo! Tu contribución nos ayuda a:
+
+- 🚀 **Acelerar el desarrollo** de nuevas funcionalidades
+- 🐛 **Mejorar la calidad** del código y resolver bugs más rápido
+- 📚 **Crear mejor documentación** y tutoriales
+- 🎨 **Mejorar la experiencia de usuario** con mejores diseños
+
+### 💰 Apoya el proyecto
+
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-Support%20Me-red?style=for-the-badge&logo=github)](https://github.com/sponsors/a-nxwball)
+
+### 🤝 Otras formas de contribuir
+
+- **⭐ Dar una estrella** al repositorio
+- **🐛 Reportar bugs** y sugerir mejoras
+- **💬 Participar en las discusiones** del proyecto
+- **📖 Mejorar la documentación**
+- **🔧 Contribuir código** con pull requests
+
+Para más información sobre beneficios y metas de financiamiento, consulta [SPONSORSHIP.md](SPONSORSHIP.md).
+
 ## Estado del Proyecto
 
 🚧 **En desarrollo activo** - Este es un proyecto de aprendizaje y desarrollo continuo. Las funcionalidades se van agregando progresivamente según las necesidades identificadas.
