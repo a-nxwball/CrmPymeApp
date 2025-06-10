@@ -1,0 +1,73 @@
+{
+  "name": "Development Branch Protection",
+  "description": "Protección para branches de desarrollo del proyecto CRM Pyme",
+  "target": "branch",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "include": [
+        "develop",
+        "development",
+        "dev",
+        "feature/*",
+        "bugfix/*",
+        "hotfix/*"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "id": "require-pull-request-dev",
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 1,
+        "dismiss_stale_reviews_on_push": true,
+        "require_last_push_approval": true
+      }
+    },
+    {
+      "id": "require-status-checks-dev",
+      "type": "status_check",
+      "parameters": {
+        "required_status_checks": [
+          {
+            "context": "dotnet-build"
+          }
+        ],
+        "strict_required_status_checks_policy": true,
+        "require_branches_to_be_up_to_date": true
+      }
+    },
+    {
+      "id": "restrict-sensitive-files-dev",
+      "type": "file_pattern",
+      "parameters": {
+        "restricted_paths": [
+          "appsettings.Production.json",
+          "*.key",
+          "secrets/",
+          "*.pem"
+        ]
+      }
+    },
+    {
+      "id": "file-size-limits-dev",
+      "type": "file_pattern",
+      "parameters": {
+        "max_file_size": 104857600,
+        "restricted_paths": [
+          "*.zip",
+          "*.rar",
+          "*.7z"
+        ]
+      }
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": "a-nxwball",
+      "actor_type": "User",
+      "bypass_mode": "always"
+    }
+  ]
+} 
