@@ -3,12 +3,12 @@
     {
       "name": "bug",
       "color": "d73a4a",
-      "description": "Algo no está funcionando"
+      "description": "Algo no está funcionando correctamente"
     },
     {
       "name": "enhancement",
       "color": "0366d6",
-      "description": "Nueva funcionalidad o solicitud"
+      "description": "Nueva funcionalidad o mejora solicitada"
     },
     {
       "name": "documentation",
@@ -28,17 +28,17 @@
     {
       "name": "priority: high",
       "color": "ff0000",
-      "description": "Alta prioridad"
+      "description": "Alta prioridad - Necesario para el funcionamiento básico"
     },
     {
       "name": "priority: medium",
       "color": "ffa500",
-      "description": "Prioridad media"
+      "description": "Prioridad media - Mejora significativa"
     },
     {
       "name": "priority: low",
       "color": "00ff00",
-      "description": "Baja prioridad"
+      "description": "Baja prioridad - Agregado útil pero no crítico"
     },
     {
       "name": "frontend",
@@ -59,6 +59,56 @@
       "name": "security",
       "color": "ff0000",
       "description": "Problemas de seguridad"
+    },
+    {
+      "name": "crm: clients",
+      "color": "1d76db",
+      "description": "Funcionalidades relacionadas con gestión de clientes"
+    },
+    {
+      "name": "crm: sales",
+      "color": "0e8a16",
+      "description": "Funcionalidades relacionadas con seguimiento de ventas"
+    },
+    {
+      "name": "crm: dashboard",
+      "color": "5319e7",
+      "description": "Dashboard y métricas"
+    },
+    {
+      "name": "crm: reports",
+      "color": "fbca04",
+      "description": "Reportes y exportación de datos"
+    },
+    {
+      "name": "crm: notifications",
+      "color": "d93f0b",
+      "description": "Sistema de notificaciones"
+    },
+    {
+      "name": "crm: products",
+      "color": "0052cc",
+      "description": "Gestión de productos/servicios"
+    },
+    {
+      "name": "crm: calendar",
+      "color": "b60205",
+      "description": "Calendario de actividades"
+    },
+    {
+      "name": "authentication",
+      "color": "d4c5f9",
+      "description": "Sistema de autenticación y autorización"
+    },
+    {
+      "name": "ui/ux",
+      "color": "c2e0c6",
+      "description": "Mejoras en la experiencia de usuario"
+    },
+    {
+      "name": "performance",
+      "color": "ff9500",
+      "description": "Optimizaciones de rendimiento"
     }
   ]
 } 

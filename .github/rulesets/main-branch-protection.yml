@@ -1,0 +1,74 @@
+name: 'Main Branch Protection'
+description: 'Reglas de protección para la rama principal del proyecto CRM Pyme'
+target: branch
+enforcement: active
+
+conditions:
+  ref_name:
+    include:
+      - 'main'
+      - 'master'
+
+rules:
+  # Requerir Pull Request antes del merge
+  - id: require-pull-request
+    type: pull_request
+    parameters:
+      required_approving_review_count: 1
+      dismiss_stale_reviews_on_push: true
+      require_code_owner_reviews: true
+      require_last_push_approval: true
+
+  # Requerir que los status checks pasen
+  - id: require-status-checks
+    type: status_check
+    parameters:
+      required_status_checks:
+        - context: 'dotnet-build'
+        - context: 'dotnet-test'
+      strict_required_status_checks_policy: true
+      require_branches_to_be_up_to_date: true
+
+  # Requerir historial lineal
+  - id: require-linear-history
+    type: linear_history
+    parameters: {}
+
+  # Restricciones de push
+  - id: restrict-pushes
+    type: push
+    parameters:
+      bypass_mode: 'off'
+
+  # Restricciones de archivos sensibles
+  - id: restrict-sensitive-files
+    type: file_pattern
+    parameters:
+      restricted_paths:
+        - 'appsettings.Production.json'
+        - '*.key'
+        - 'secrets/'
+        - '*.pem'
+        - '*.p12'
+        - '*.pfx'
+
+  # Restricciones de tamaño de archivo
+  - id: file-size-limits
+    type: file_pattern
+    parameters:
+      max_file_size: 52428800  # 50MB
+      restricted_paths:
+        - '*.zip'
+        - '*.rar'
+        - '*.7z'
+        - '*.tar.gz'
+
+  # Requerir firmas de commits
+  - id: require-commit-signatures
+    type: commit_signature
+    parameters: {}
+
+bypass_actors:
+  - actor_id: a-nxwball
+    actor_type: 'User'
+    bypass_mode: 'always'
