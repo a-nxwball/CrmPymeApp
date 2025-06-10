@@ -1,9 +1,9 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Proyecto1.Models;
+using CrmPymeApp.Models;
 
-namespace Proyecto1.Controllers;
+namespace CrmPymeApp.Controllers;
 
 public class HomeController : Controller
 {

@@ -35,7 +35,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 // Use Https Redirection for security. Required for HTTPS to work.
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection(); // Comentado temporalmente para desarrollo HTTP
 
 // Use Static Files for CSS, JS, Images, etc.
 app.UseStaticFiles();

@@ -123,9 +123,7 @@ C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\CrmPymeAp
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\CrmPymeApp.RazorAssemblyInfo.cache
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\CrmPymeApp.RazorAssemblyInfo.cs
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\EFCoreNpgsqlNetTopologySuite.cs
-C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\scopedcss\bundle\CrmPymeApp.styles.css
-C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\scopedcss\projectbundle\CrmPymeApp.bundle.scp.css
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\compressed\34omf3oxkv-b9sayid5wm.gz
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\compressed\pij943y0as-61n19gt1b8.gz
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\compressed\enkcjc48ek-xtxxf3hu2r.gz
@@ -188,8 +186,6 @@ C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\compresse
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\compressed\1l9rtxxf93-muycvpuwrr.gz
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\compressed\fcvoplfgr1-87fc7y1x7t.gz
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\compressed\fqkh3959v3-mlv21k5csn.gz
-C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\compressed\e7seylf68o-67jd5h641s.gz
-C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\compressed\h3cnxbutuo-67jd5h641s.gz
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\staticwebassets.development.json
@@ -200,3 +196,4 @@ C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\refint\Cr
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\CrmPymeApp.pdb
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\CrmPymeApp.genruntimeconfig.cache
 C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\ref\CrmPymeApp.dll
+C:\Users\Aaron Newball\OneDrive\Escritorio\CrmPymeApp\obj\Debug\net9.0\CrmPymeApp.sourcelink.json

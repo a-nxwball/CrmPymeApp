@@ -1,8 +1,53 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "CRM Pyme - Inicio";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">CRM Pyme</h1>
+    <p>Sistema de Gestión de Relaciones con Clientes</p>
+    
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>Vistas Públicas</h3>
+            <div class="d-grid gap-2">
+                <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Inicio</a>
+                <a href="@Url.Action("Privacy", "Home")" class="btn btn-secondary">Privacidad</a>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <h3>Vistas de Autenticación</h3>
+            <div class="d-grid gap-2">
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <a href="@Url.Action("Admin", "Home")" class="btn btn-success">Panel Administrador</a>
+                    <a href="@Url.Action("Vendedor", "Home")" class="btn btn-info">Panel Vendedor</a>
+                    <a href="@Url.Action("Logout", "Account")" class="btn btn-danger">Cerrar Sesión</a>
+                }
+                else
+                {
+                    <a href="@Url.Action("Login", "Account")" class="btn btn-primary">Iniciar Sesión</a>
+                    <a href="@Url.Action("Register", "Account")" class="btn btn-success">Registrarse</a>
+                }
+            </div>
+        </div>
+    </div>
+    
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <div class="mt-4">
+            <h4>Información del Usuario</h4>
+            <p>Usuario: @(User.Identity?.Name ?? "Usuario")</p>
+            <p>Roles: 
+                @if (User.IsInRole("Administrador"))
+                {
+                    <span class="badge bg-success">Administrador</span>
+                }
+                @if (User.IsInRole("Vendedor"))
+                {
+                    <span class="badge bg-info">Vendedor</span>
+                }
+            </p>
+        </div>
+    }
 </div>
