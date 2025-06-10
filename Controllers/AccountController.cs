@@ -26,15 +26,18 @@ public class AccountController : Controller
         if (result.Succeeded)
         {
             var user = await _userManager.FindByEmailAsync(model.Email);
-            var roles = await _userManager.GetRolesAsync(user);
-            
-            // Redirección según rol
-            if (roles.Contains("Administrador"))
-                return RedirectToAction("Admin", "Home");
-            else if (roles.Contains("Vendedor"))
-                return RedirectToAction("Vendedor", "Home");
-            else
-                return RedirectToAction("Index", "Home");
+            if (user != null)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                
+                // Redirección según rol
+                if (roles.Contains("Administrador"))
+                    return RedirectToAction("Admin", "Home");
+                else if (roles.Contains("Vendedor"))
+                    return RedirectToAction("Vendedor", "Home");
+                else
+                    return RedirectToAction("Index", "Home");
+            }
         }
 
         ModelState.AddModelError("", "Credenciales inválidas.");
