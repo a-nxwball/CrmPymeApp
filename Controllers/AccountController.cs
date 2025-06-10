@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using CrmPymeApp.Models.ViewModels;
 
 [AllowAnonymous]
 public class AccountController : Controller
@@ -21,9 +22,20 @@ public class AccountController : Controller
     {
         if (!ModelState.IsValid) return View(model);
 
-        var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
+        var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
         if (result.Succeeded)
-            return RedirectToAction("Index", "Home");
+        {
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            var roles = await _userManager.GetRolesAsync(user);
+            
+            // Redirección según rol
+            if (roles.Contains("Administrador"))
+                return RedirectToAction("Admin", "Home");
+            else if (roles.Contains("Vendedor"))
+                return RedirectToAction("Vendedor", "Home");
+            else
+                return RedirectToAction("Index", "Home");
+        }
 
         ModelState.AddModelError("", "Credenciales inválidas.");
         return View(model);
@@ -42,7 +54,7 @@ public class AccountController : Controller
         {
             await _userManager.AddToRoleAsync(user, "Vendedor"); // Rol por defecto
             await _signInManager.SignInAsync(user, isPersistent: false);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Vendedor", "Home");
         }
 
         foreach (var error in result.Errors)
@@ -55,5 +67,10 @@ public class AccountController : Controller
     {
         await _signInManager.SignOutAsync();
         return RedirectToAction("Login", "Account");
+    }
+
+    public IActionResult AccessDenied()
+    {
+        return View();
     }
 }

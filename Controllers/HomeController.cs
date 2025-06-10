@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Proyecto1.Models;
 
@@ -14,6 +15,18 @@ public class HomeController : Controller
     }
 
     public IActionResult Index()
+    {
+        return View();
+    }
+
+    [Authorize(Roles = "Administrador")]
+    public IActionResult Admin()
+    {
+        return View();
+    }
+
+    [Authorize(Roles = "Vendedor")]
+    public IActionResult Vendedor()
     {
         return View();
     }

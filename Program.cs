@@ -43,6 +43,9 @@ app.UseStaticFiles();
 // Use Routing for MVC. Required for MVC to work.
 app.UseRouting();
 
+// Use Authentication before Authorization
+app.UseAuthentication();
+
 // Use Authorization for authentication. Usage of the app is restricted to authenticated users.
 app.UseAuthorization();
 
@@ -51,9 +54,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-// Run the app
-app.Run();
-
+// Initialize roles
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
@@ -65,3 +66,6 @@ using (var scope = app.Services.CreateScope())
             await roleManager.CreateAsync(new IdentityRole(role));
     }
 }
+
+// Run the app
+app.Run();
