@@ -1,0 +1,64 @@
+{
+  "labels": [
+    {
+      "name": "bug",
+      "color": "d73a4a",
+      "description": "Algo no está funcionando"
+    },
+    {
+      "name": "enhancement",
+      "color": "0366d6",
+      "description": "Nueva funcionalidad o solicitud"
+    },
+    {
+      "name": "documentation",
+      "color": "0075ca",
+      "description": "Mejoras o adiciones a la documentación"
+    },
+    {
+      "name": "good first issue",
+      "color": "7057ff",
+      "description": "Bueno para principiantes"
+    },
+    {
+      "name": "help wanted",
+      "color": "008672",
+      "description": "Se busca ayuda extra"
+    },
+    {
+      "name": "priority: high",
+      "color": "ff0000",
+      "description": "Alta prioridad"
+    },
+    {
+      "name": "priority: medium",
+      "color": "ffa500",
+      "description": "Prioridad media"
+    },
+    {
+      "name": "priority: low",
+      "color": "00ff00",
+      "description": "Baja prioridad"
+    },
+    {
+      "name": "frontend",
+      "color": "0e8a16",
+      "description": "Cambios en la interfaz de usuario"
+    },
+    {
+      "name": "backend",
+      "color": "5319e7",
+      "description": "Cambios en el servidor/API"
+    },
+    {
+      "name": "database",
+      "color": "fbca04",
+      "description": "Cambios relacionados con la base de datos"
+    },
+    {
+      "name": "security",
+      "color": "ff0000",
+      "description": "Problemas de seguridad"
+    }
+  ]
+} 

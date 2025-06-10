@@ -1,0 +1,13 @@
+# Estos usuarios serán solicitados para review automáticamente
+* @a-nxwball
+
+# Archivos específicos
+*.md @a-nxwball
+.github/ @a-nxwball
+README.md @a-nxwball
+LICENSE @a-nxwball
+
+# Configuración del proyecto
+*.csproj @a-nxwball
+appsettings.json @a-nxwball
+Program.cs @a-nxwball 
