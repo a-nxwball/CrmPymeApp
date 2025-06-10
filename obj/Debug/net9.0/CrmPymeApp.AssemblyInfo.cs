@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrmPymeApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a578caed88347b2f2530b3e8028367079563c3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrmPymeApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrmPymeApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
